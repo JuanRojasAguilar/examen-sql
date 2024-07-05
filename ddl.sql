@@ -55,7 +55,7 @@ CREATE TABLE empleado (
 );
 
 CREATE TABLE cliente (
-  codigo_cliente INT(11),
+  codigo_cliente INT(11) AUTO_INCREMENT,
   nombre_cliente VARCHAR(50),
   nombre_contacto VARCHAR(30),
   apellido_contacto VARCHAR(30),
@@ -86,7 +86,7 @@ CREATE TABLE pago (
 );
 
 CREATE TABLE pedido (
-  codigo_pedido INT(11),
+  codigo_pedido INT(11) AUTO_INCREMENT,
   fecha_pedido DATE,
   fecha_esperada DATE,
   fecha_entrega DATE,
