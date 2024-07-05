@@ -495,10 +495,17 @@
 
 5. Calcula el precio de venta del producto más caro y más barato en una misma consulta.
 
+   ```sql
+   SELECT
+     (SELECT nombre FROM producto WHERE precio_venta = (SELECT MAX(precio_venta) FROM producto)) AS producto_caro,
+     (SELECT nombre FROM producto WHERE precio_venta = (SELECT MIN(precio_venta) FROM producto)) AS producto_barato;
    ```
-   SELECT (SELECT nombre
-   
-   )
+
+6. Calcula el número de clientes que tiene la empresa.
+
+   ```sql
+   SELECT COUNT(codigo_cliente) AS nmr_clientes
+   FROM cliente;
    ```
 
    
