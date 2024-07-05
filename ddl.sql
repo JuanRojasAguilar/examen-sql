@@ -40,7 +40,7 @@ CREATE TABLE producto (
 );
 
 CREATE TABLE empleado (
-  codigo_empleado INT(11) AUTO_INCREMENT,
+  codigo_empleado INT(11),
   nombre VARCHAR(50),
   apellido1 VARCHAR(50),
   apellido2 VARCHAR(50),
