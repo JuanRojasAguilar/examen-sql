@@ -1,4 +1,7 @@
-# examen-sql
+# examen-sql J2
+
+**Jhon Arley Roa Suarez**
+**Juan Diego Rojas Aguilar**
 
 1. Devuelve un listado con el código de oficina y la ciudad donde hay oficinas.
 
@@ -508,4 +511,11 @@
    FROM cliente;
    ```
 
-   
+## Consultas variadas
+
+7. Devuelve un listado indicando todas las ciudades donde hay oficinas y el
+número de empleados que tiene.
+
+   ```
+   SELECT o.ciudad, GROUP B
+   ```
